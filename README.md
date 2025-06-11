@@ -47,7 +47,7 @@
 
 ## 📁 Data Storage & Backup
 
-- **User Data:** Stored locally in `data/` directory under user profile  
+- **User Data:** Stored locally in `Sangharsh/` directory under user profile  
 - **PDF Documents:** Exported to user’s **Documents** folder (default, customizable)  
 - **Settings & Configs:** Stored in encrypted format locally  
 - **Backup Options:** Configurable in Settings → Backup & Restore
