@@ -37,7 +37,7 @@
 
 ### 📥 Installer (Official Release)
 
-1. Download the official `.exe` setup file from the **private release portal** or company distribution channel.
+1. Download the official `.exe` setup file from the [Releases](https://github.com/Harshil-Anuwadia/Sangharsh-Inventory-Management-Software/releases) section or company distribution channel.
 2. Run the installer and complete setup following the on-screen instructions.
 3. After installation, launch the app from the desktop or Start Menu.
 
