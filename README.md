@@ -1,6 +1,6 @@
 # Sangharsh Delivery Challan
 
-![Sangharsh Logo]("https://github.com/Harshil-Anuwadia/Sangharsh-Inventory-Management-Software/blob/main/logo.png?raw=true")
+![Sangharsh Logo](https://github.com/Harshil-Anuwadia/Sangharsh-Inventory-Management-Software/blob/main/logo.png?raw=true)
 
 An advanced desktop application designed specifically for Sangharsh Machinery to create, manage, and export delivery challans with a modern, user-friendly interface.
 
