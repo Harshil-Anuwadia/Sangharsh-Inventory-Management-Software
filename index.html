@@ -891,7 +891,7 @@
                 </div>
                 
                 <div class="download-buttons">
-                    <a href="#" class="btn btn-primary" onclick="simulateDownload('windows')">
+                    <a href="https://github.com/Harshil-Anuwadia/Sangharsh-Inventory-Management-Software/releases/download/v1.0.1/SangharshUserSetup_win64_v1.0.1beta.exe" class="btn btn-primary" download onclick="simulateDownload('windows', this)">
                         <i class="fab fa-windows"></i>
                         Download for Windows
                     </a>
@@ -1049,13 +1049,13 @@
         });
 
         // Simulate download with progress (mobile-friendly)
-        function simulateDownload(platform) {
+        function simulateDownload(platform, element) {
             const progressBar = document.getElementById('downloadProgress');
-            const downloadBtn = event.target.closest('.btn');
+            const downloadBtn = element;
             const originalText = downloadBtn.innerHTML;
             
             // Disable button and show loading state
-            downloadBtn.disabled = true;
+            downloadBtn.style.pointerEvents = 'none';
             downloadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparing Download...';
             
             let progress = 0;
@@ -1070,18 +1070,21 @@
                     setTimeout(() => {
                         // Mobile-friendly alert
                         if (window.innerWidth <= 768) {
-                            showMobileAlert('Download would start here! This is a demo release notes page.');
+                            showMobileAlert('Download started! Check your downloads folder.');
                         } else {
-                            alert('Download would start here! This is a demo release notes page.');
+                            alert('Download started! Check your downloads folder.');
                         }
                         
                         progressBar.style.width = '0%';
-                        downloadBtn.disabled = false;
+                        downloadBtn.style.pointerEvents = 'auto';
                         downloadBtn.innerHTML = originalText;
                     }, 500);
                 }
                 progressBar.style.width = progress + '%';
             }, 100);
+            
+            // Don't prevent the default download behavior
+            return true;
         }
 
         // Mobile-friendly alert
